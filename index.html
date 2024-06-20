@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/90da086562.js" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="assets/styles.css">
+    
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        
+        <div id="search-container">
+            <h1>Weather app</h1>
+            <input type="text" id="city" placeholder="Enter city">
+            <button onclick="getWeather()">Search</button>
+        </div>
+
+        <div id="weather-container" class="d-none">
+            <img src="https://placehold.co/400x300" class="card-img-top time-icon" id="time-icon" alt="time Icon">
+            <img id="weather-icon" alt="Weather Icon" class="icon">
+            <div class="spacer"></div>
+            <div id="temp-div"></div>
+
+            <div id="weather-info"></div>
+
+            <div class="line"></div>
+            <h3 id="forecast-label" class="d-none">Next 24 hour forecast</h3>
+            <div id="hourly-forecast"></div>
+            <div class="spacer"></div>
+
+        </div>
+        <div class="spacer"></div>
+    </div>
+
+    <script src ="assets/app.js"></script>
+
+</body>
+</html>
